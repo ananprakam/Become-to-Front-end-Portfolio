@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <h1>Welcome to my portfolio website!</h1>
+            <br>
+            <p>
+                My name is Anan Prakam and I am a web developer. I like to create websites that are interactive and easy to use.
+            </p>
+            <img src="pic.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>Design website and application</p>
+        <p>-HTML,CSS create Website for reading manga</p>
+        <p>-Design application Crossword game using Figma</p>
+        <hr>
+        <h3>Skills</h3>
+        <p>Tools</p>
+        <p>-Figmma</p>
+        <p>-Flutter</p>
+        <p>-Firebase</p>
+        <p>programming language</p>
+        <p>-HTML</p>
+        <p>-CSS</p>
+        <p>-Dart</p>
+        <p>-C#</p>
+        <p>-Java Script</p>
+        <hr>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can also find me on GitHub: <a href="https://github.com/ananprakam">GitHub Profile</a></p>
+        <p>Email: ananprakam2001@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ANAN. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling effect with JavaScript
+        const navLinks = document.querySelectorAll('header nav ul li a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const scrollToPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+                window.scroll({
+                    top: scrollToPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

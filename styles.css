@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Kanit', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #471f75;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed; /* Set the header as fixed position */
+    top: 0; /* Place the header at the top of the page */
+    left: 0; /* Place the header at the left edge of the page */
+    width: 100%; /* Set the header width to 100% of the viewport */
+    z-index: 999; /* Ensure the header appears above other content */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-content img {
+    max-width: 300px;
+    margin-left: 2rem; /* Add some spacing between the text and the image */
+    float: right; /* Float the image to the right side */
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #471f75;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
